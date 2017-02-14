@@ -22,8 +22,13 @@ public class Application {
         return "index";
     }
 
-    @RequestMapping(value = "page/{pageName}")
-    public String page(@PathVariable String pageName, HttpServletRequest request, HttpServletResponse response, Model model) {
-        return "pageName";
+    @RequestMapping(value = "/{moduleName}/{pageName}")
+    public String modulePage(@PathVariable(value = "moduleName") String moduleName, @PathVariable(value = "pageName") String pageName) {
+        return moduleName + "/" + pageName;
+    }
+
+    @RequestMapping(value = "/{pageName}")
+    public String page(@PathVariable(value = "pageName") String pageName) {
+        return pageName;
     }
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet"/>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script th:src="@{/static/js/menu.js}"></script>
+    <script th:src="@{/static/js/skill.js}"></script>
+    <script th:inline="javascript">
+        var imgCtx = /*[[@{/static/img/}]]*/ 'test';
+    </script>
+    <script th:src="@{/static/js/page/hero.js}"></script>
+    <script th:src="@{/static/js/page/hero-zs.js}"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+</nav>
+<div class="container">
+    <h1>战士</h1>
+    <div><img th:src="@{/static/img/hero-zs/zs.png}"/></div>
+    <h3>主动技能</h3>
+    <table class="table table-hover">
+        <tr>
+            <th class="col-md-2">名称</th>
+            <th class="col-md-3">说明</th>
+            <th class="col-md-3">掉落</th>
+            <th class="col-md-2">学习等级</th>
+            <th class="col-md-2">效果图</th>
+        </tr>
+        <tbody id="active-skill-table-body">
+        </tbody>
+    </table>
+    <h3>被动技能</h3>
+    <table class="table table-hover">
+        <tr>
+            <th class="col-md-2">名称</th>
+            <th class="col-md-3">说明</th>
+            <th class="col-md-3">掉落</th>
+            <th class="col-md-2">学习等级</th>
+            <th class="col-md-2">效果图</th>
+        </tr>
+        <tbody id="passive-skill-table-body">
+        </tbody>
+    </table>
+</div>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?700b446d377726ab5cf970abb2536a06";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>
