@@ -22,11 +22,6 @@ public class Application {
         return "index";
     }
 
-    @RequestMapping(value = "/{moduleName}/{pageName}")
-    public String modulePage(@PathVariable(value = "moduleName") String moduleName, @PathVariable(value = "pageName") String pageName) {
-        return moduleName + "/" + pageName;
-    }
-
     @RequestMapping(value = "/{pageName}")
     public String page(@PathVariable(value = "pageName") String pageName) {
         return pageName;

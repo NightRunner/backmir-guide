@@ -1,24 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet"/>
-    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script th:src="@{/static/js/menu.js}"></script>
-    <script th:src="@{/static/js/skill.js}"></script>
-
-    <script th:inline="javascript">
-        var imgCtx = /*[[@{/static/img/}]]*/ 'test';
-    </script>
-    <script th:src="@{/static/js/page/hero.js}"></script>
-    <script th:src="@{/static/js/page/hero-fs.js}"></script>
+<head th:replace="fragments/header :: head">
 </head>
 <body>
-<nav class="navbar navbar-default">
-</nav>
+<div th:replace="fragments/common :: nav">
+</div>
 <div class="container">
     <h1>法师</h1>
     <div><img th:src="@{/static/img/hero-fs/fs.jpg}"/></div>
@@ -34,15 +20,63 @@
         <tbody id="active-skill-table-body">
         </tbody>
     </table>
+    <div>
+        诱惑之光列表
+        <table class="table table-bordered">
+            <tr>
+                <td>4级</td>
+                <td>8级</td>
+                <td>17级</td>
+                <td>23级</td>
+                <td>28级</td>
+                <td>33级</td>
+                <td>36级</td>
+                <td>39级</td>
+                <td>43级</td>
+                <td>58级</td>
+            </tr>
+            <tr>
+                <td>鹿</td>
+                <td>多钩猫钉耙猫</td>
+                <td>半兽人战士</td>
+                <td>半兽人勇士300</td>
+                <td>沃玛小怪、红黑野猪、蜈蚣小怪</td>
+                <td> 巨型多角虫900</td>
+                <td>半兽勇士900</td>
+                <td>牛头魔</td>
+                <td> 黑鄂蜘蛛</td>
+                <td>狐狸</td>
+            </tr>
+        </table>
+    <pre>
+
+    PS：巨型多角虫900（攻击一般，物防一般，魔防极高，出现在落霞山谷），
+
+    半兽勇士900（物防极高，缺点：攻击miss多，出现在封魔大陆），
+
+    狐狸（可以每种召唤一只，也可只召唤一种），
+
+    法师召唤物只能升到3级。不会像道士的召唤物可以升至7级。
+        </pre>
+    </div>
+    <div>
+    <pre>
+    宠物控制
+
+    v 宠物休息攻击：ctrl+A
+
+    v 宠物快捷拉回：ctrl+Z
+
+    v 宠物快捷叛变：ctrl+X
+
+    2.07.03版本开始法师对宠物施加命令ctrl+x会直接杀死宠物而不会放生
+        </pre>
+    </div>
 </div>
-<script>
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?700b446d377726ab5cf970abb2536a06";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
+
+<div th:replace="fragments/footer :: baidu-script"></div>
+<script th:src="@{/static/js/skill.js}"></script>
+<script th:src="@{/static/js/page/hero.js}"></script>
+<script th:src="@{/static/js/page/hero-fs.js}"></script>
 </body>
 </html>

@@ -28,7 +28,7 @@ function getMenuA(obj) {
 var menu = [{url: 'index', name: '目录'}, {
     name: '职业',
     url: 'hero',
-    children: [{name: '战士(已完成)', url: 'hero-zs'}, {name: '法师(已完成)', url: 'hero-fs'}, {name: '道士', url: 'hero-ds'}]
+    children: [{name: '战士(已完成)', url: 'hero-zs'}, {name: '法师(已完成)', url: 'hero-fs'}, {name: '道士(已完成)', url: 'hero-ds'}]
 }, {name: '任务', url: 'task', children: [{name: '主线', url: 'task-main'}, {name: '支线', url: 'task-secondary'}]}
 ];
 

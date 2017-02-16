@@ -406,8 +406,7 @@ var skills = [
             {name: "伏魔令(破、赤、阎)宝箱", isEasy: false}
         ],
         img: '/hero-fs/htsd.gif'
-    },
-    {
+    }, {
         type: "active",
         hero: "fs",
         name: "火龙气焰",
@@ -424,6 +423,284 @@ var skills = [
             {name: "伏魔令(破、赤、阎)宝箱", isEasy: false}
         ],
         img: '/hero-fs/hlqy.gif'
+    }, {
+        type: "passive",
+        hero: "ds",
+        name: "精神力战法",
+        desc: "3级增加2点躲避及3点准确",
+        levels: [
+            {desc: "", requiredLevel: 9, level: 1},
+            {desc: "", requiredLevel: 11, level: 2},
+            {desc: "", requiredLevel: 14, level: 3}],
+        froms: [
+            {name: "所有小僵尸", isEasy: true},
+            {name: "尸王", isEasy: false}
+        ],
+        img: null
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "治愈术",
+        desc: "回复自身和他人（包括自己的宠物）少量HP，回复量根据自己的道术决定",
+        levels: [
+            {desc: "", requiredLevel: 7, level: 1},
+            {desc: "", requiredLevel: 9, level: 2},
+            {desc: "", requiredLevel: 11, level: 3}],
+        froms: [
+            {name: "所有小僵尸", isEasy: true},
+            {name: "尸王", isEasy: false}
+        ],
+        img: '/hero-ds/zys.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "施毒术",
+        desc: "无需毒药即可释放，固定减少中毒敌人2/4/6点HP/秒（依照技能等级）续时间和技能等级道术相关，有降低怪物防御的效果",
+        levels: [
+            {desc: "", requiredLevel: 14, level: 1},
+            {desc: "", requiredLevel: 16, level: 2},
+            {desc: "", requiredLevel: 18, level: 3}],
+        froms: [
+            {name: "所有小僵尸", isEasy: true},
+            {name: "尸王", isEasy: false}
+        ],
+        img: '/hero-ds/sds.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "灵魂火符",
+        desc: "通过驱使护身符来攻击敌人，无需符即可释放，伤害和技能等级道术相关",
+        levels: [
+            {desc: "", requiredLevel: 18, level: 1},
+            {desc: "", requiredLevel: 21, level: 2},
+            {desc: "", requiredLevel: 24, level: 3}],
+        froms: [
+            {name: "所有小僵尸", isEasy: true},
+            {name: "尸王", isEasy: false}
+        ],
+        img: '/hero-ds/lhhf.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "隐身术",
+        desc: "无需符即可释放，隐身时间和技能等级道术有关，部分怪物有破隐效果，例如月魔蜘蛛、各类大小BOSS等",
+        levels: [
+            {desc: "", requiredLevel: 20, level: 1},
+            {desc: "", requiredLevel: 22, level: 2},
+            {desc: "", requiredLevel: 24, level: 3}],
+        froms: [
+            {name: "所有小僵尸", isEasy: true},
+            {name: "尸王", isEasy: false}
+        ],
+        img: '/hero-ds/yss.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "神圣战甲术",
+        desc: "无需符即可释放，增加防御魔防，不在面板显示，实际有效，持续时间和技能等级道术相关（具体时间看右上角面板显示）给别人加的防御魔防是自己的一半，最新版加强了己方，道士生存能力更强，并且可以给宝宝使用",
+        levels: [
+            {desc: "", requiredLevel: 22, level: 1},
+            {desc: "", requiredLevel: 24, level: 2},
+            {desc: "", requiredLevel: 26, level: 3}],
+        froms: [
+            {name: "所有小僵尸", isEasy: true},
+            {name: "尸王", isEasy: true}
+        ],
+        img: '/hero-ds/sszjs.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "召唤骷髅",
+        desc: "3级可召唤两只（1级召唤初始1级，2级初始2级，3级初始3级，血量固定300），每下攻击和道术即时挂钩，主动攻击，吸引仇恨",
+        levels: [
+            {desc: "", requiredLevel: 19, level: 1},
+            {desc: "", requiredLevel: 21, level: 2},
+            {desc: "", requiredLevel: 24, level: 3}],
+        froms: [
+            {name: "所有小僵尸", isEasy: true},
+            {name: "尸王", isEasy: true}
+        ],
+        img: '/hero-ds/zhkl.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "召唤术",
+        desc: "3级可召唤2只（1级召唤初始1级，2级初始2级，3级初始3级，血量固定800），可先招神兽再招骷髅，每下攻击和道术即时挂钩",
+        levels: [
+            {desc: "", requiredLevel: 35, level: 1},
+            {desc: "", requiredLevel: 37, level: 2},
+            {desc: "", requiredLevel: 40, level: 3}],
+        froms: [
+            {name: "沃玛卫士", isEasy: false},
+            {name: "沃玛卫士", isEasy: false},
+            {name: "沃玛教主", isEasy: false},
+            {name: "虹魔猪卫", isEasy: false},
+            {name: "虹魔蝎卫", isEasy: false},
+            {name: "巨型钳虫", isEasy: true},
+            {name: "尸王", isEasy: true}
+        ],
+        img: '/hero-ds/zhs.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "进阶召唤",
+        desc: "3级可召唤2只（1级召唤初始1级，2级初始2级，3级初始3级，血量固定1000），可先招上古神兽再招骷髅，每下攻击和道术即时挂钩",
+        levels: [
+            {desc: "", requiredLevel: 40, level: 1},
+            {desc: "", requiredLevel: 42, level: 2},
+            {desc: "", requiredLevel: 44, level: 3}],
+        froms: [
+            {name: "沃玛教主", isEasy: false},
+            {name: "虹魔猪卫", isEasy: false},
+            {name: "虹魔蝎卫", isEasy: false},
+            {name: "藏宝图宝箱", isEasy: true}
+        ],
+        img: '/hero-ds/jjzh.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "神兽天御",
+        desc: "使用后上古神兽肩上增加盔甲效果（先招出上古再使用此技能），大幅增加上古神兽防御、增加部分魔域，名字变为圣兽，此技能非常重要",
+        levels: [
+            {desc: "", requiredLevel: 42, level: 1},
+            {desc: "", requiredLevel: 44, level: 2},
+            {desc: "", requiredLevel: 46, level: 3}],
+        froms: [
+            {name: "魔龙力士", isEasy: false},
+            {name: "魔龙巨蛾", isEasy: false},
+            {name: "魔龙战将", isEasy: true},
+            {name: "魔龙树妖", isEasy: true}
+        ],
+        img: '/hero-ds/ssty.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "先天气功",
+        desc: "使用后人物道术百分比增加，3级增加30%道术上限，右上角显示时间，持续时间和道术、技能等级相关，增加道士伤害吸收（即减少部分所受伤害），非常重要技能，宠物可以享用增加的道术",
+        levels: [
+            {desc: "", requiredLevel: 44, level: 1},
+            {desc: "", requiredLevel: 46, level: 2},
+            {desc: "", requiredLevel: 48, level: 3}],
+        froms: [
+            {name: "魔龙树妖", isEasy: false},
+            {name: "魔龙教主", isEasy: true},
+            {name: "暗之触龙神", isEasy: true}
+        ],
+        img: '/hero-ds/xtqg.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "召唤白虎",
+        desc: "召唤出的白虎是特殊攻击方式，并且双防和血量都比之前的召唤兽提升跨度较大，固定血量2500",
+        levels: [
+            {desc: "", requiredLevel: 50, level: 1},
+            {desc: "", requiredLevel: 53, level: 2},
+            {desc: "", requiredLevel: 55, level: 3}],
+        froms: [
+            {name: "凌霄天界所有怪物", isEasy: true},
+            {name: "白虎", isEasy: true}
+        ],
+        img: '/hero-ds/zhbh.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "强化召唤白虎",
+        desc: "最好等级在62的时候把三本书一起学习，这样能召唤2个白虎，若是57学习1本之后就会出现只能召唤一只白虎了，应该是游戏本身就这样设计的",
+        levels: [
+            {desc: "", requiredLevel: 57, level: 1},
+            {desc: "", requiredLevel: 59, level: 2},
+            {desc: "", requiredLevel: 62, level: 3}],
+        froms: [
+            {name: "白虎", isEasy: true}
+        ],
+        img: '/hero-ds/zhbh.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "索命毒雾",
+        desc: "通过驱使护身符散播毒雾，使一定范围内怪物持续性攻击，一定几率使怪物中毒",
+        levels: [
+            {desc: "", requiredLevel: 52, level: 1},
+            {desc: "", requiredLevel: 54, level: 2},
+            {desc: "", requiredLevel: 56, level: 3}],
+        froms: [
+            {name: "怨恶巨兽", isEasy: true},
+            {name: "突变人面蛛妖", isEasy: true}
+        ],
+        img: '/hero-ds/smdw.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "强化灵魂火符",
+        desc: "灵魂火符的强化技能，增加灵魂火符的攻击，伤害和技能等级道术相关",
+        levels: [
+            {desc: "", requiredLevel: 53, level: 1},
+            {desc: "", requiredLevel: 55, level: 2},
+            {desc: "", requiredLevel: 57, level: 3}],
+        froms: [
+            {name: "天界守护神", isEasy: false}
+        ],
+        img: '/hero-ds/qhlhhf.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "群体治愈术",
+        desc: "回复自身和周围他人（包括自己的宠物）HP，回复量根据自己的道术决定",
+        levels: [
+            {desc: "", requiredLevel: 33, level: 1},
+            {desc: "", requiredLevel: 35, level: 2},
+            {desc: "", requiredLevel: 37, level: 3}],
+        froms: [
+            {name: "虹魔猪卫", isEasy: false},
+            {name: "虹魔蝎卫", isEasy: false},
+            {name: "白野猪", isEasy: false}
+
+        ],
+        img: '/hero-ds/qtzys.gif'
+    }, {
+
+        type: "active",
+        hero: "ds",
+        name: "强化施毒术",
+        desc: "顾名思义，在原有的施毒术技能上加强，固定减少中毒敌人8/10/12点HP/秒（依照技能等级），有降低怪物防御的效果",
+        levels: [
+            {desc: "", requiredLevel: 50, level: 1},
+            {desc: "", requiredLevel: 52, level: 2},
+            {desc: "", requiredLevel: 54, level: 3}],
+        froms: [
+            {name: "雪域所有怪物", isEasy: false}
+        ],
+        img: '/hero-ds/sds.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "召唤月灵",
+        desc: "召唤一个强而有力的帮手，远程攻击，固定血量4000，攻击不错，防御极强",
+        levels: [
+            {desc: "", requiredLevel: 62, level: 1},
+            {desc: "", requiredLevel: 65, level: 2},
+            {desc: "", requiredLevel: 68, level: 3}],
+        froms: [
+            {name: "破天邪龙", isEasy: true},
+            {name: "破天魔龙", isEasy: true},
+            {name: "火龙教主", isEasy: true},
+            {name: "破龙教主", isEasy: true}
+        ],
+        img: '/hero-ds/zhyl.gif'
+    }, {
+        type: "active",
+        hero: "ds",
+        name: "先天罡气",
+        desc: "先天气功的进阶之术，使用后人物道术百分比增加，右上角显示时间，持续时间和道术、技能等级相关，非常重要技能，宠物可以享用增加的道术,4级增加35%道术上限，5级增加40%道术上限，6级增加45%道术上限",
+        levels: [
+            {desc: "", requiredLevel: 62, level: 1},
+            {desc: "", requiredLevel: 68, level: 2},
+            {desc: "", requiredLevel: 74, level: 3}],
+        froms: [
+            {name: "月氏战魔", isEasy: true},
+            {name: "月氏兽王", isEasy: true}
+        ],
+        img: '/hero-ds/xtqg.gif'
     }
 ];
 

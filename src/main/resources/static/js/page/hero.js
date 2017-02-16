@@ -13,7 +13,7 @@ function getSkillRow(skill) {
     for (var k = 0; k < skill.levels.length; k++) {
         html += skill.levels[k].requiredLevel + '&nbsp;';
     }
-    html += '</td><td>' + (skill.img == null ? "无" : '<img src="' + (imgCtx + skill.img) + '"/>') + '</td></tr>';
+    html += '</td><td>' + (skill.img == null ? "无" : '<img class="img-thumbnail" src="' + (imgCtx + skill.img) + '"/>') + '</td></tr>';
 
     return html;
 }

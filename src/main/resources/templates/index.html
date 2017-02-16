@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet"/>
-    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script th:src="@{/static/js/menu.js}"></script>
+<head th:replace="fragments/header :: head">
 </head>
 <body>
-<nav class="navbar navbar-default">
-</nav>
+<div th:replace="fragments/common :: nav">nav
+</div>
 <div class="container">
     <table class="table table-hover">
         <tr>
@@ -27,7 +20,7 @@
             <td>第二章：职业技能</td>
             <td colspan="2"><a th:href="@{/hero-zs}">战士(已完成)</a></td>
             <td colspan="2"><a th:href="@{/hero-fs}">法师(已完成)</a></td>
-            <td colspan="2"><a href="">道士</a></td>
+            <td colspan="2"><a th:href="@{/hero-ds}">道士(已完成)</a></td>
         </tr>
 
         <tr>
@@ -60,14 +53,6 @@
         </tr>
     </table>
 </div>
-<script>
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?700b446d377726ab5cf970abb2536a06";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
+<div th:replace="fragments/footer :: baidu-script"></div>
 </body>
 </html>
