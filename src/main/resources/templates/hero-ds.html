@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">
+</div>
+<div class="container">
+    <h1>道士</h1>
+    <div><img th:src="@{/static/img/hero-ds/ds.jpg}"/></div>
+    <h3>主动技能</h3>
+    <table class="table table-hover">
+        <tr>
+            <th class="col-md-2">名称</th>
+            <th class="col-md-3">说明</th>
+            <th class="col-md-3">掉落</th>
+            <th class="col-md-2">学习等级</th>
+            <th class="col-md-2">效果图</th>
+        </tr>
+        <tbody id="active-skill-table-body">
+        </tbody>
+    </table>
+    <h3>被动技能</h3>
+    <table class="table table-hover">
+        <tr>
+            <th class="col-md-2">名称</th>
+            <th class="col-md-3">说明</th>
+            <th class="col-md-3">掉落</th>
+            <th class="col-md-2">学习等级</th>
+            <th class="col-md-2">效果图</th>
+        </tr>
+        <tbody id="passive-skill-table-body">
+        </tbody>
+    </table>
+    <div>
+    <pre>
+    PS说明：
+
+    骷髅、神兽、上古神兽打死怪物可以掉落任务物品，计算任务杀怪数，掉落神殿卷轴、神器碎片等
+
+    【宠物可升级到7级，升级方式为宠物最后一击击杀怪物获取经验，获取一定量的经验宠物即可升级，1级可升到3级，3级可升到5级，5级可升到7级，
+
+    其中骷髅、神兽基本无需在意等级，主要作用为卡位、牵制，升级增加宠物的攻击及攻速（可能双防有所增加），血量不增加】
+</pre>
+    </div>
+    <div>
+    <pre>
+    宠物控制
+
+    v 宠物休息攻击：ctrl+A
+
+    v 宠物快捷拉回：ctrl+Z
+
+    v 宠物快捷杀死：ctrl+X
+</pre>
+    </div>
+</div>
+
+<div th:replace="fragments/footer :: baidu-script"></div>
+<script th:src="@{/static/js/skill.js}"></script>
+<script th:src="@{/static/js/page/hero.js}"></script>
+<script th:src="@{/static/js/page/hero-ds.js}"></script>
+</body>
+</html>

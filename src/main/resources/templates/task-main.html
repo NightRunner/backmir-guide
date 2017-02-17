@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h3>落霞村</h3>
+    <table class="table table-hover">
+        <tr>
+            <th colspan="2" class="col-md-8">任务流程</th>
+            <th class="col-md-4">图例指引</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>创建人物，进入游戏，和新人指引交谈。
+            </td>
+            <td><img class="img-thumbnail" th:src="@{/static/img/task/main/image002.jpg}"/></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>获得简单的任务：杀鸡，杀鹿
+                <strong>（如果掉了鹿血存起来，以后做赤血魔剑支线任务（需要两瓶鹿血）有用）</strong>
+            </td>
+            <td><img class="img-thumbnail" th:src="@{/static/img/task/main/image003.jpg}"/><img class="img-thumbnail"
+                                                                                                th:src="@{/static/img/task/main/image004.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>送木板给船夫</td>
+            <td><img class="img-thumbnail" th:src="@{/static/img/task/main/image005.jpg}"/></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>杀稻草人，杀多钩猫，猫的具体位置如图红圈处，建议在此处练级到7级-10级+（法师由于矿窑僵尸魔抗较高，建议刷到一定等级后再去矿窑），
+                <strong>后续奖励技能书任务需要7级，避免来回跑路，并捡取垃圾卖掉作为初期药钱，顺便打满一身基础装备</strong>
+            </td>
+            <td><img class="img-thumbnail" th:src="@{/static/img/task/main/image006.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image007.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image008.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image009.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>7级新人指引（需要任务进行到这里）将赠送你第一本技能书
+                <strong>注意背包留一格空格以便获取书籍，如果没空格位置将无法获取，当然没获取也可以继续游戏，没有多大的妨碍），</strong>），右键学习即可。
+            </td>
+            <td><img class="img-thumbnail" th:src="@{/static/img/task/main/image002.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>接下来新人指引要你找铁匠聊天，然后铁匠要你去兽人古墓找他的孩子：
+                <strong>小宝</strong>，如图所示出门按照箭头走就是兽人古墓。
+
+            </td>
+            <td><img class="img-thumbnail" th:src="@{/static/img/task/main/image010.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image011.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>接下来新人指引要你找铁匠聊天，然后铁匠要你去兽人古墓找他的孩子：
+                <strong>进入兽人古墓一层打出一条<a class="btn btn-xs btn-success">蝎子的尾巴</a>放在包里，后续任务有用，不建议在此地图打装备，</strong>
+                前期如觉得打卫士困难（道士可卡位，需要两个骷髅，比较简单，法师可卡位），
+                可以打骷髅精灵升级，小宝在箭头所在位置。
+            </td>
+            <td><img class="img-thumbnail" th:src="@{/static/img/task/main/image012.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image013.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>回城找铁匠完成任务后，和小贩交谈，
+                会将你传送之黑圈处，打半兽战士即可获得任务物品【龙阳草】<strong>(直接掉落到包中，无需拾取)</strong>
+                <strong>进入兽人古墓一层打出一条<a class="btn btn-xs btn-success">蝎子的尾巴</a>放在包里，后续任务有用，不建议在此地图打装备，</strong>
+                前期如觉得打卫士困难（道士可卡位，需要两个骷髅，比较简单，法师可卡位），
+                可以打骷髅精灵升级，小宝在箭头所在位置。
+            </td>
+            <td rowspan="2"><img class="img-thumbnail" th:src="@{/static/img/task/main/image042.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image043.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>回去和小贩对话后要求你给他一条蝎子尾巴，这时候我们可以把刚才顺便打出来的蝎子尾巴交给他。于是他给了你一包药粉，要你去交给王老伯（位于上图所示红圈处）
+
+            </td>
+        </tr>
+    </table>
+    <hr/>
+    <h3>沃玛---> 封魔地图</h3>
+    <table class="table table-hover">
+        <tr>
+            <th colspan="2" class="col-md-8">任务流程</th>
+            <th class="col-md-4">图例指引</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>前往沃玛
+            </td>
+            <td>无</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                <strong>前期道士建议在一层左边处卡卫士，将骷髅固定在图上位置之后，人物在右边将卫士引过来之后迅速绕回骷髅左边，注意拉开距离让卫士卡在骷髅右边附近，这样的好处是道士可以站在原地丢符，而卫士由于仇恨的吸引不会从右边来打你，只会在骷髅左右转动，非常简单。法师可以站在1层入口那个3面板那里卡侍卫，也比较简单，战士建议刺杀为主（先杀小怪获取一定攻击装备）</strong>
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image047.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image048.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                进入沃玛神殿之后打一个神秘徽章放身上即可，10个沃玛之水可以在恶魔商人（可购买少量装备）处换取魔杖银蛇炼狱其中一把，初期主要在一层刷中间刷新的卫士升级和获取装备，后期刷教主，尽量在沃玛升级到33，尽量装备提升至沃玛级别（33建议去做主线任务换取2-2全属性的徽章，并且做到潘多拉魔盒任务为止，方便用沃玛装备*2或者祖玛赤月装备换取经验。
+                <strong>PS：最新版已经取消合成经验</strong>）。
+            </td>
+            <td><img class="img-thumbnail" th:src="@{/static/img/task/main/image014.jpg}"/></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>此阶段打书升级来说道士和法师还有战士方向有所不同，
+                道士在此可蹲到沃玛级别装备，或者打骷髅精灵升级到24+出2*骷髅，之后尸王殿练级刷狗书，
+                战士在此打到一定装备后去打邪恶钳虫掉狂战士和稳如泰山，然后可以去刷封魔的树妖升级，树妖由于处于安全区，上下线不会满血，可以采取读档法击杀升级，
+                法师同样打到火墙和一定的装备去打尸王出魔法盾，33级就可以去落霞招3只900血巨型多角虫蹲触龙神升级）
+            </td>
+            <td rowspan="2"><img class="img-thumbnail" th:src="@{/static/img/task/main/image015.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image016.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>继续任务，把勋章交给王老伯，他叫你去找封魔城主，于是我们由沃玛二层进入链接通道。连接通道可以无需逗留，也可以在此打打小白猪，打打僵尸出点书,顺着箭头走。
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>
+                所有NPC如图所示。然后我们就和城主对话，获得2-2全属性勋章一枚
+                （身上有神秘勋章，包里有一空格，神秘勋章会变成荣誉勋章）
+            </td>
+            <td><img class="img-thumbnail" th:src="@{/static/img/task/main/image022.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image050.jpg}"/>
+            </td>
+        </tr>
+    </table>
+    <hr/>
+    <h3>封魔大陆</h3>
+    <table class="table table-hover">
+        <tr>
+            <th colspan="2" class="col-md-8">任务流程</th>
+            <th class="col-md-4">图例指引</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>城主叫我们去地牢打50个<strong>蜈蚣或者钳虫</strong>
+                <strong>（怪物较多，前期没有做的必要，可以在做完徽章任务后继续去升级），最新版地牢一和二层都计数，道士法师的宠物打死也计数，切记，箭头所指位置即为地牢。</strong>
+
+                <ul>
+                    <li>道士利用宝宝和隐身、灵魂火符来完成任务。</li>
+                    <li>法师如果有魔法盾有火墙可以直接在一层烧完成任务，如果没魔法盾火墙等级也很
+                        低装备也很差但是执着的一定要完成任务，去二层中间位置烧，注意喝药。
+                    </li>
+                    <li>战士带多点药进去，在二层逐个击杀做任务，不建议在低级时候做此任务
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image051.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                干掉50个蜈蚣或者钳虫之后我们就去找封魔城主，他叫我们去打一封信，这个时候城主已经给我们开启的传送祖玛的选项，于是我们点传送进祖玛，打<strong>暗之弓箭手</strong>出密信
+                <strong>（直接掉落背包中，道士法师宠物打死也掉落）</strong>
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image055.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <p>拿到密信之后我们出来和封魔城主对话，得知要到矿窑那么远的地方当时就吐了一口老血（没办法，谁叫他是NPC呢），于是我们买了一包随机飞啊飞的飞到了矿窑，<strong>记得带回城，不要进落霞村以免绑定回城在落霞。</strong>
+                </p>
+                <p>跑到矿窑和神秘学着对话，这个坑爹NPC又叫我们回去找封魔城主，还好带了回城</p>
+                <p>于是我们回城和封魔城主对话……竟然又要我们跑到赤月去。</p>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                <p>回去之后和封魔城主一对话，两腿一伸，咱们又要跑回去打蜘蛛了</p>
+                <p><strong>（剧毒蛛丝只在赤月峡谷爆，3种蜘蛛均可掉落，直接掉落到背包中，需要5个，道士法师宠物打死也掉落，掉率比较低，请带满药物）</strong>
+                </p>
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image053.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>
+                <p>收集完5个剧毒蛛丝之后我们又用回城大法和封魔城主对话，竟然又要我们跑一次赤月，血僵尸位于赤月峡谷处，按M查看黄点即可
+                </p>
+                <p><strong>PS:打血僵尸道士可以采取卡位法进行击杀，法师也可以借鉴，方法可参考铿了个去发布的精品贴
+                </strong>
+                </p>
+                <p>千辛万苦跑到了，暴打血僵尸出了潘多拉魔盒，又采用回城大法和封魔城主对话</p>
+                <p><strong>（以后合成经验卷轴{PS最新版取消合成经验卷}和后续可能出的物品都靠它了,直接掉落背包中）</strong></p>
+            </td>
+            <td rowspan="2">
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image017.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image054.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>
+                <p>任务继续，5大碎片任务。</p>
+                <p>经过殴打祖玛教主、白野猪、沃玛教主、骷髅精灵、以及矿窑的尸王（尸王殿、链接通道不算）获取了神器碎片（有几率掉落），然后用可怕的潘多拉宝盒合成了一个骨头爪子：上古神器
+                </p>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>
+                <p>得到上古神器之后再次返回到封魔城主身边与其对话换取：<strong>恶魔封印水（骨）</strong></p>
+            </td>
+            <td rowspan="2">
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image055.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image018.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>
+                <p>打开包裹右击这瓶覆满了邪恶气息的恶魔水，赫然现身眼前的是一只远古恶魔！不过由于它身上大部分恶魔之力还没有从封印之中恢复，战胜它其实并不困难，迅速击毙其获得黑色羽毛。</p>
+                <strong>（如果此时自己的装备过于寒酸，做到此步骤之前要记得先关闭精英模式，不然万一出现一只首领级的8000血远古骷髅精灵可能要砍上半天）</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>
+                <p>打开包裹右击这瓶覆满了邪恶气息的恶魔水，赫然现身眼前的是一只远古恶魔！不过由于它身上大部分恶魔之力还没有从封印之中恢复，战胜它其实并不困难，迅速击毙其获得黑色羽毛。</p>
+                <strong>（如果此时自己的装备过于寒酸，做到此步骤之前要记得先关闭精英模式，不然万一出现一只首领级的8000血远古骷髅精灵可能要砍上半天）</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>
+                好了，可以回去复命了。从封魔城主那里得知这根奇怪的羽毛出处在某个未知的小岛上，那里的老兵可能知晓此事。去那边应该要走水路，突然回想起记忆中那遥远的故乡落霞村的渔夫好像有提到过一座美丽的小岛，也许他会知道些什么，正好许久没有回去过，就走一趟吧。<strong>PS：渔夫后续任务需要等级50级
+            </strong>
+            </td>
+        </tr>
+    </table>
+    <hr/>
+    <h3>落霞村-->狐月岛—->回封魔大陆</h3>
+    <table class="table table-hover">
+        <tr>
+            <th colspan="2" class="col-md-8">任务流程</th>
+            <th class="col-md-4">图例指引</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>不远万里回到熟悉的落霞村，首先完成任务要紧。徐徐前行看着周围的画面不知觉间已经走到船夫大哥的渔船边，正好他刚打渔归来，上去提及此事，没想到船夫大哥还认得自己，还答应帮忙送自己去那座海岛上。
+                <p><strong>（此处需要等级50级才可进入新地图）</strong></p>
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image019.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>登岛后发现老兵早已在靠岸边等候着我们，好像他早就知道似的，跟他聊天后得知此处名唤狐月岛，既来之则安之，得到老兵的忠告和一些有用的信息后决定稍作歇息再探索此岛。</td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image020.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>饱览美景与美食之后才想起来还没有向老兵转告封魔城主的问候，闲聊中逐渐也卸下了对老者的防备，遂向其交出那根黑色羽毛，老兵告诉了我们这几年来岛上的异变并委托我们除掉50只受异变影响的动物。
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>狐月岛路线图：<strong>绿圈</strong>处所示为仓库老板；<strong>黄圈</strong>处为杂货商人
+                <strong>（此处商人特别出售落霞传送卷、封魔传送卷消耗品均为2500金币/个）。</strong>
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image025.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>接下来我们要做的就是去往<strong>凌霄天界击杀50只狐狸</strong>并向老兵复命。
+                <strong>（此处任务可能有BUG，本来是要杀死50只，但是只杀1只就提示杀了50只）</strong>
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image021.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>完成了老兵托付的如此“险恶”的任务后得知了地狱的可怕存在，要封印这个打破了现世平衡的地方需要给远古英雄破除暗黑魔法封印。现在要做的就是在地狱地图的<strong>熔岩地狱恶魔那里获得熔岩之心</strong>。
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image023.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>
+                手里一直拿着个火烫烫的东西也不是个事儿啊，麻溜儿地回去找老兵，没想到老兵见面就一句话：封魔城的走你。好吧，屁颠儿屁颠儿的回封魔，怎么回？不用教了吧。回到封魔城的中心看到一尊威武的四人高的雕像，上前跟它对话（雕像也会说话-
+                -|）,它会告诉我们：你们就是早上八九点钟的太阳，以后祖国的未来就靠你们了，不干到65岁不许退休知道没？互相吐过口水之后它会帮助我们开通最后一个冰雪王座系列地图，至此主线任务告一段落。
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image024.jpg}"/>
+            </td>
+        </tr>
+    </table>
+    <hr/>
+    <h3>庄园—->秘境
+    </h3>
+    <table class="table table-hover">
+        <tr>
+            <th colspan="2" class="col-md-8">任务流程</th>
+            <th class="col-md-4">图例指引</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>跟封魔城主对话去庄园找老兵。
+                <p>这不愿意也得愿意啊~~~</p>
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image026.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>前往秘境地图找寻品质14以上的铜矿。这个任务还是比较容易的。
+
+                <p>多捡起来看看都会有的。</p>
+
+                <p>身上必须要有秘境凭证才能进入秘境地图。</p>
+
+                <p>不知道哪里爆秘境凭证的参考新人指南》新地图的进入方法：传送门</p>
+
+                <p>完成上面任务后可以开启手工制作【矿石冶炼】</p>
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image027.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>找到品质14以上的铜矿后回来跟老兵对话（直接回城就在庄园地图）开启后面的任务
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>这个任务有点累，需要有耐心，具体如果冶炼等级之类的请参考手工装备：传送门</td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/task/main/image029.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>完成后跟老兵对话，目前版本任务结束，完成任务可以制作手工装备了。等待后续~~~</td>
+            <td>
+            </td>
+        </tr>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+</body>
+</html>
