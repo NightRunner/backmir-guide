@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h3>支线任务</h3>
+    <table class="table table-hover">
+        <tr>
+            <th colspan="2" class="col-md-8">任务流程</th>
+            <th class="col-md-4">图例指引</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>矿窑神秘学者：提供两个支线打怪任务
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>合成赤血魔剑任务
+                <p><strong>我们前往赤月峡谷东，然后按大地图看见有个绿点，那边坐着一个猥琐的老头，点击对话
+                </strong></p>
+                <p>需要材料：裁决之杖*1、骨玉权杖*1、龙纹剑*1、罗刹*1、鹿血*2</p>
+                <p>罗刹掉落：落霞山谷900多角虫、封魔大陆900半兽勇士</p>
+                <p>鹿血掉落：由落霞村鹿掉落（掉率不高）</p>
+            </td>
+            <td>赤血魔剑属性如图：满成长值状态<br/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/secondary/image003.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><strong>血魔之血循环任务（需要等级40级）</strong>
+                <ul>
+                    <li>等级达到40后，在赤月峡谷东杀双头血魔有几率得到血魔之血触发此任务。（任务物品将直接掉落在包裹内，请预先留有空格）</li>
+                    <li>在场景内找到天尊（坐标51，23）与其对话</li>
+                    <li>
+                        然后前往恶魔之地击败赤月恶魔有几率得到古老的火把，与天尊对话获得奖励25W经验和15W金币。（任务物品将直接掉落在包裹内，请预先留有空格）
+                    </li>
+                </ul>
+            </td>
+            <td><img class="img-thumbnail" th:src="@{/static/img/task/secondary/image004.jpg}"/>
+                <br/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/secondary/image005.jpg}"/>
+                <br/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/secondary/image006.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>佛珠换伏魔令（阎）循环任务（需要等级55级）
+                <ul>
+                    <li>和这个门对话，地点：静之冰谷
+                    </li>
+                    <li>
+                        33版开始取消金条，38版加入伏魔令（阎）
+                    </li>
+                    <li>集齐七颗佛珠对话异界之门：伏魔令（阎）*2，八卦符咒*2，秘境凭证*2
+                    </li>
+                </ul>
+            </td>
+            <td><img class="img-thumbnail" th:src="@{/static/img/task/secondary/image007.jpg}"/>
+                <br/>
+                <img class="img-thumbnail" th:src="@{/static/img/task/secondary/image008.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>
+                <strong>储藏室（需要等级55级）
+                </strong>
+                <p>任务所需物品：35品质的金锭*1、金之护符*1。</p>
+                <p>具体冶炼和制作方法请参考：手工装备制作。传送门</p>
+                <p>完成之后可以找庄园老兵开启，每次2500手续费。
+                </p>
+            </td>
+            <td><img class="img-thumbnail" th:src="@{/static/img/task/secondary/image009.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>
+                <strong>火龙神殿（需要等级60级）</strong>
+                <ul>
+                    <li>
+                        任务地点：浴血之地（原传送古树位置）
+                    </li>
+                    <li>
+                        对话【血之祭台】即可获取任务详细说明以及所需物品。
+                    </li>
+                    <li>
+                        任务第一步所需物品：月氏之灵*1，怨恶之灵*1，阎魔之灵*1（通过击杀月氏战魔、怨恶巨兽、阎魔太子所得，不是必出物品）单机无需：阎魔之灵
+
+                    </li>
+                    <li>
+                        任务第二步所需物品：金之护符*1。具体冶炼和制作方法请参考：手工装备制作。传送门
+
+                    </li>
+                    <li>
+                        任务全部完成后，即可以随时的进入火龙神殿。
+
+                    </li>
+                </ul>
+            </td>
+            <td><img class="img-thumbnail" th:src="@{/static/img/task/secondary/image010.jpg}"/>
+            </td>
+        </tr>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+</body>
+</html>

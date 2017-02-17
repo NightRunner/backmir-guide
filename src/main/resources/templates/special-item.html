@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h3>特殊装备</h3>
+    <table class="table table-hover">
+        <tr>
+            <th class="col-md-2">装备名称</th>
+            <th class="col-md-2">装备属性</th>
+            <th class="col-md-5">装备效果</th>
+            <th class="col-md-3">装备掉落</th>
+        </tr>
+        <tr>
+            <td>
+                传送戒指
+            </td>
+            <td>
+                防御0-4，
+                <br/>
+                魔防0-4，
+                <br/>
+                需要等级16
+            </td>
+            <td>
+
+                使用命令为@move X,Y（XY中间注意有英文模式下的逗号），
+                <br/>
+                新版CD-15秒，解除了部分地图不可用限制
+                <br/>
+                快捷使用：大地图（TAB键）打开，戴上戒指，点击地图就可以传送。
+
+            </td>
+            <td>
+
+                祖玛教主，赤月恶魔，触龙神，
+                <br/>
+                暗之触龙神，藏宝图箱子，邪恶毒蛇，
+                <br/>
+                伏魔令（赤、阎、破）宝箱。。等
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                护身戒指
+            </td>
+            <td>
+                防御0-1
+                <br/>
+                魔防0-1
+                <br/>
+                道术0-1
+                <br/>
+                魔法0-1
+                <br/>
+                需要等级16
+            </td>
+            <td>
+
+                将所损失的血转换为掉蓝，法师带着无后仰
+
+                梦回法师后期不需要此戒指
+
+            </td>
+            <td>
+
+                祖玛教主，触龙神，暗之触龙神，
+
+                藏宝图箱子,藏宝图中三大boss，
+
+                魔炼之地暗之祖玛教主，暗之虹膜教主
+
+                伏魔令（赤、阎、破）宝箱。。等
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                麻痹戒指
+            </td>
+            <td>
+                防御0-3
+                <br/>
+                魔防0-3
+                <br/>
+                攻击0-1
+                <br/>
+                需要等级16级
+            </td>
+            <td>
+                面攻击怪物可以麻痹怪物，隔位、半月刀锋均无法麻痹。
+
+            </td>
+            <td>
+                暗之触龙神，变异龙神，藏宝图箱子，
+                伏魔令（赤、阎、破）宝箱
+            </td>
+        </tr>
+        <tr>
+            <td>
+                复活戒指
+            </td>
+            <td>
+                防御0-1
+                <br/>
+                魔防0-1
+                <br/>
+                攻击0-7
+                <br/>
+                道术0-7
+                <br/>
+                魔法0-7
+                <br/>
+                需要等级58级
+            </td>
+            <td>
+                死亡后可复活一次，间隔十分钟
+            </td>
+            <td>
+                寒冰魔王，阎罗守护炎魔，白虎
+            </td>
+        </tr>
+        <tr>
+            <td>
+                虹膜戒指
+            </td>
+            <td>
+                攻击0-4
+                <br/>
+                需要等级33级
+            </td>
+            <td>
+                吸血5%
+            </td>
+            <td>
+                虹膜猪卫，虹膜蝎卫
+            </td>
+        </tr>
+        <tr>
+            <td>
+                虹膜手镯
+
+            </td>
+            <td>
+                道术0-2
+                <br/>
+                需要等级33级
+            </td>
+            <td>
+                吸血5%
+            </td>
+            <td>
+                虹膜猪卫，虹膜蝎卫
+            </td>
+        </tr>
+        <tr>
+            <td>
+                虹膜项链
+            </td>
+            <td>
+                魔法0-4
+                <br/>
+                需要等级33级
+            </td>
+            <td>
+                吸血5%
+            </td>
+            <td>
+                虹膜猪卫，虹膜蝎卫
+            </td>
+        </tr>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+</body>
+</html>
