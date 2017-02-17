@@ -2,6 +2,11 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments/header :: head">
 </head>
+<style>
+    td.ok {
+        background-color: #EEEEEE;
+    }
+</style>
 <body>
 <div th:replace="fragments/common :: nav">nav
 </div>
@@ -18,14 +23,14 @@
         </tr>
         <tr>
             <td>第二章：职业技能</td>
-            <td colspan="2"><a th:href="@{/hero-zs}">战士(已完成)</a></td>
-            <td colspan="2"><a th:href="@{/hero-fs}">法师(已完成)</a></td>
-            <td colspan="2"><a th:href="@{/hero-ds}">道士(已完成)</a></td>
+            <td colspan="2" class="ok"><a th:href="@{/hero-zs}">战士(已完成)</a></td>
+            <td colspan="2" class="ok"><a th:href="@{/hero-fs}">法师(已完成)</a></td>
+            <td colspan="2" class="ok"><a th:href="@{/hero-ds}">道士(已完成)</a></td>
         </tr>
 
         <tr>
             <td>第三章：游戏过程</td>
-            <td><a href="">主线任务</a></td>
+            <td class="ok"><a th:href="@{/task-main}">主线任务(已完成)</a></td>
             <td><a href="">支线任务</a></td>
             <td><a href="">有趣的说明</a></td>
             <td><a href="">初期新手必看</a></td>

@@ -23,7 +23,6 @@ function ajax(options) {
     };
 
 
-
     options = $.fn.extend(defaultOptions, options);
 
     options.params.timpstamp_ = new Date().getTime();

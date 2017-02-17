@@ -1,24 +1,24 @@
-var skills = [
+var tasks = [
     {
-        hero: 'zs',
-        name: '基本剑法',
-        desc: '',
-        level: [7, 9, 11],
-        gets: [{name: '所有小僵尸', easy: true}],
-        img: ''
+        id: 'lxc-main-1',
+        type: 'main',
+        map: 'lxc',
+        desc: '创建人物，进入游戏，和新人指引交谈。',
+        imgs: ["/npc/xszdy.jpg"]
+    }, {
+        id: 'lxc-main-2',
+        type: 'main',
+        map: 'lxc',
+        desc: '获得简单的任务：杀鸡，杀鹿（如果掉了鹿血存起来，以后做赤血魔剑支线任务（需要两瓶鹿血）有用）',
+    }, {
+        id: 'lxc-main-3',
+        type: 'main',
+        map: 'lxc',
+        desc: '送木板给船夫',
+    },{
+        id: 'lxc-main-3',
+        type: 'main',
+        map: 'lxc',
+        desc: '送木板给船夫',
     },
-    {hero: 'zs', name: '攻杀剑法', desc: '', level: [7, 9, 11], gets: [{type: 'monster', name: '尸王', easy: true}], img: ''}
 ];
-
-
-var monsters = [
-    {id: 10001, name: '鸡', hp: 5, minAC: 1, maxAC: 3, drops: [20001]}
-];
-
-var items = [
-    {id: 20001, name: '鸡肉', gold: 'todo', desc: 'todo'}
-];
-
-var tasks = [{id: 801, desc: 'todo', rewards: [{type: 'exp', amount: 0}]}];
-
-var maps = [{id: 901, name: '落霞山谷', npcs: [{name: '新手指导员', x: 10, y: 10, img: 'todo', task: []}]}];
