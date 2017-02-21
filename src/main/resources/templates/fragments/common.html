@@ -5,5 +5,20 @@
 <body>
 <nav class="navbar navbar-default" th:fragment="nav">
 </nav>
+<div th:fragment="version-change">
+    <h3>更新记录</h3>
+    <table class="table table-hover">
+        <tr>
+            <th>日期</th>
+            <th>说明</th>
+            <th>链接</th>
+        </tr>
+        <tr>
+            <td>2017-02-21</td>
+            <td>加入地图坐标点页面</td>
+            <td><a th:href="@{/map-point}">地图坐标点</a></td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>

@@ -9,7 +9,8 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script th:src="@{/static/js/menu.js}"></script>
     <script th:inline="javascript">
-        var imgCtx = /*[[@{/static/img/}]]*/ 'test';
+        var imgCtx = /*[[@{/static/img/}]]*/ 'imageCtx';
+        var ctx = /*[[@{/}]]*/ 'ctx';
     </script>
 </head>
 <body>

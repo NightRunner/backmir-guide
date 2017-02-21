@@ -1,5 +1,5 @@
 function initMenu() {
-    var menuHtml = '<div class="container-fluid"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>    <span class="icon-bar"></span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>        </button>        <a class="navbar-brand" href="#">BackMir攻略</a>        </div>        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">        ' +
+    var menuHtml = '<div class="container-fluid"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>    <span class="icon-bar"></span>        <span class="icon-bar"></span>        <span class="icon-bar"></span>        </button>        <a class="navbar-brand" href="' + ctx + '">BackMir攻略</a>        </div>        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">        ' +
         '<ul class="nav navbar-nav">  ';
 
     for (var i = 0; i < menu.length; i++) {
@@ -45,7 +45,7 @@ var menu = [
         url: 'beginner-guide',
         children: [
             {name: '升级经验表(已完成)', url: 'level-up-exp'},
-            {name: '地图坐标传送', url: 'map-point'},
+            {name: '地图坐标传送(已完成)', url: 'map-point'},
             {name: '游戏中无法保存的物品', url: 'can-not-save-item'},
             {name: '联机组队和查看装备教程', url: 'team-and-view-other-hero-guide'},
             {name: '新地图的进入方法', url: 'new-map-join-method'},
