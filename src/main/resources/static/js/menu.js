@@ -50,7 +50,7 @@ var menu = [
             {name: '联机组队和查看装备教程', url: 'team-and-view-other-hero-guide'},
             {name: '新地图的进入方法', url: 'new-map-join-method'},
             {name: '所有套装掉落集合', url: 'all-suite-item-drop'},
-            {name: '常见问题', url: 'faq'},
+            {name: '常见问题(已完成)', url: 'faq'},
             {name: '特殊装备(已完成)', url: 'special-item'},
             {name: '无伤点', url: 'monster-can-not-attack'},
             {name: '有趣的说明(已完成)', url: 'interesting-note'}
