@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h3>有趣的说明</h3>
+    <table class="table table-hover">
+        <tr>
+            <th>名称</th>
+            <th>名称</th>
+            <th>图例</th>
+        </tr>
+        <tr>
+            <td><strong>5大碎片</strong>
+            </td>
+            <td>游戏主线涉及的5大boss的碎片
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/interesting-note/image002.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>寒冰刷新点</strong>
+            </td>
+            <td>三大刷新点，用于练级，打佛珠
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/interesting-note/image003.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>七颗佛珠分布</strong>
+            </td>
+            <td>换取伏魔令（阎）
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/interesting-note/image004.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>金条</strong></td>
+            <td><p>伏魔令（赤）（阎）多人组队情况下通关奖励几率获得。</p>
+                <p>伏魔令（破）单人多人组队情况下通关奖励几率获得。</p>
+                <p>伏魔令（破）宝箱爆出</p>
+                <p>金条右击使用1=95W</p>
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/interesting-note/image005.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>游戏精英模式</strong></td>
+            <td>游戏服务器下设置
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/interesting-note/image006.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>霸者勋章</strong>
+            </td>
+            <td>2.10.13版本已经可以通过用乾坤石洗属性
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>大补丸</strong>
+            </td>
+            <td>
+                <p>{2.09.42}版本加入，急速补充生命与魔法</p>
+                <p>有小、中、大之分</p>
+                <p>通过潘多拉魔盒合成所得</p>
+                <p>详细请参考《合成公式大全>合成公式文字版》传送门</p>
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/interesting-note/image007.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/interesting-note/image008.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/interesting-note/image009.jpg}"/>
+            </td>
+        </tr>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+</body>
+</html>

@@ -53,7 +53,7 @@ var menu = [
             {name: '常见问题', url: 'faq'},
             {name: '特殊装备(已完成)', url: 'special-item'},
             {name: '无伤点', url: 'monster-can-not-attack'},
-            {name: '有趣的说明', url: 'interesting-note'},
+            {name: '有趣的说明(已完成)', url: 'interesting-note'}
         ]
     }
 ];

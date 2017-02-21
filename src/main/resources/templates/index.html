@@ -31,7 +31,7 @@
             <td>第三章：游戏过程</td>
             <td class="ok"><a th:href="@{/task-main}">主线任务(已完成)</a></td>
             <td class="ok"><a th:href="@{/task-secondary}">支线任务(已完成)</a></td>
-            <td><a href="">有趣的说明</a></td>
+            <td class="ok"><a th:href="@{/interesting-note}">有趣的说明(已完成)</a></td>
             <td><a href="">初期新手必看</a></td>
             <td><a href="">藏宝图方面</a></td>
             <td class="ok"><a th:href="@{/level-up-exp}">升级经验表(已完成)</a></td>
@@ -55,8 +55,46 @@
             <td><a href="">出现端口问题方法</a></td>
         </tr>
     </table>
+    <h2>常用命令复制</h2>
+    <div>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                      data-toggle="tab">组队</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">藏宝图</a>
+            </li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                                       data-toggle="tab">还需要啥?</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <br/>
+                <a class="btn btn-success" data-toggle="tooltip"
+                   data-placement="bottom" title="点击复制"
+                   onclick="copyTextAndChangeTooltipToCopied('@createteam',this)">@createteam(创建队伍)</a>
+                <a class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="点击复制"
+                   onclick="copyTextAndChangeTooltipToCopied('@quitteam',this)">@quitteam(退出队伍)</a>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="profile">
+                <br/>
+                <a class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="点击复制"
+                   onclick="copyTextAndChangeTooltipToCopied('@move 200,220',this)">@move 200,220(玲珑仙岛)</a>
+                <a class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="点击复制"
+                   onclick="copyTextAndChangeTooltipToCopied('@move 29,112',this)">@move 29,112(巨人巷)</a>
+                <a class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="点击复制"
+                   onclick="copyTextAndChangeTooltipToCopied('@move 223,105',this)">@move 223,105(幽冥坛)</a>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="messages">
+                <br/>
+                <a class="btn btn-success" href="https://tieba.baidu.com/p/4974587275?red_tag=0744231206"
+                   target="_blank">请在贴吧中留言</a>
+            </div>
+        </div>
+
+    </div>
+    <div th:replace="fragments/common :: version-change"></div>
 </div>
-<div th:replace="fragments/common :: version-change"></div>
 <div th:replace="fragments/footer :: baidu-script"></div>
 </body>
 </html>
