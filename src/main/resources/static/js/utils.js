@@ -23,5 +23,5 @@ function copyToClipboard(txt) {
 
 function copyTextAndChangeTooltipToCopied(txt, element) {
     copyToClipboard(txt);
-    $("#" + ($(element).attr('aria-describedby')) + ">.tooltip-inner").html('已复制');
+    $("#" + ($(element).attr('aria-describedby')) + ">.tooltip-inner").html('已复制到剪切板');
 }

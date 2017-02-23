@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h3>卡位无伤点位置</h3>
+    <table class="table table-hover">
+        <tr>
+            <th>名称</th>
+            <th>图例</th>
+        </tr>
+        <tr>
+            <td>
+                封魔树妖
+
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/monster-can-not-attack/image001.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                魔龙树妖
+                <br/>
+                PS：道士无伤点是54，112
+
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/monster-can-not-attack/image002.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                寒冰魔王
+
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/monster-can-not-attack/image003.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                熔岩地狱恶魔
+
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/monster-can-not-attack/image004.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                天界守护神
+
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/monster-can-not-attack/image005.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                赤月恶魔
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/monster-can-not-attack/image006.jpg}"/>
+            </td>
+        </tr>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+</body>
+</html>

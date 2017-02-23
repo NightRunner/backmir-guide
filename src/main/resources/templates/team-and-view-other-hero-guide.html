@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h3>联机组队教程</h3>
+    <table class="table table-hover">
+        <tr>
+            <th>说明</th>
+            <th>图例</th>
+        </tr>
+        <tr>
+            <td colspan="2">组队功能是在2.06.01版本加入的，如果联机不能组队请更新游戏。</td>
+        </tr>
+        <tr>
+            <td>
+                组队命令：
+                <br/>
+                创建队伍：<a class="btn btn-success" data-toggle="tooltip"
+                        data-placement="bottom" title="点击复制到剪贴板"
+                        onclick="copyTextAndChangeTooltipToCopied('@createteam',this)">@createteam</a>
+                <br/>
+                <br/>
+                退出队伍：<a class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="点击复制到剪贴板"
+                        onclick="copyTextAndChangeTooltipToCopied('@quitteam',this)">@quitteam</a>
+                <br/>
+                其中添加了快速复制人物姓名到聊天栏的快捷键，操作方法为选中别的玩家，按Alt+N
+            </td>
+            <td rowspan="5">
+                <img class="img-thumbnail" th:src="@{/static/img/team-and-view-other-hero-guide/image002.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/team-and-view-other-hero-guide/image003.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2.06.02版本增加了快捷组队命令，操作方法先打组队命令，然后选中人物后Alt+A快速添加，Alt+K快速踢出功能。
+            </td>
+        </tr>
+        <tr>
+            <td>2.09.29版本增加点击人物名字出现头像，左上角。点击组队会出现邀请选项。前提是先建立组队命令。
+            </td>
+        </tr>
+        <tr>
+            <td>如遇到不能组队的情况请检查队长是否创建队伍，再检查双方之前是否有加入其他队伍，如果是的话退出队伍在重新操作
+            </td>
+        </tr>
+        <tr>
+            <td>2.09.29增加点击人物名字出现头像，点击查看可以查看对方装备
+            </td>
+        </tr>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+</body>
+</html>

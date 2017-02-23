@@ -46,13 +46,13 @@ var menu = [
         children: [
             {name: '升级经验表(已完成)', url: 'level-up-exp'},
             {name: '地图坐标传送(已完成)', url: 'map-point'},
-            {name: '游戏中无法保存的物品', url: 'can-not-save-item'},
-            {name: '联机组队和查看装备教程', url: 'team-and-view-other-hero-guide'},
-            {name: '新地图的进入方法', url: 'new-map-join-method'},
-            {name: '所有套装掉落集合', url: 'all-suite-item-drop'},
+            {name: '游戏中无法保存的物品(已完成)', url: 'can-not-save-item'},
+            {name: '联机组队和查看装备教程(已完成)', url: 'team-and-view-other-hero-guide'},
+            {name: '新地图的进入方法(已完成)', url: 'new-map-join-method'},
+            {name: '所有套装掉落集合(已完成)', url: 'all-suite-item-drop'},
             {name: '常见问题(已完成)', url: 'faq'},
             {name: '特殊装备(已完成)', url: 'special-item'},
-            {name: '无伤点', url: 'monster-can-not-attack'},
+            {name: '无伤点(已完成)', url: 'monster-can-not-attack'},
             {name: '有趣的说明(已完成)', url: 'interesting-note'}
         ]
     }
