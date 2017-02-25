@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h3>分解与精华石强化说明</h3>
+    <table class="table table-hover">
+        <tr>
+            <td>1</td>
+            <td> 每个装备都有其对应的阶级，分解后能出产其对应阶级-1的精华石。PS：详细请参考《鉴定与合成系统>装备阶级速查（2-7阶）》</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td> 每个战意精华石可使同阶段装备攻击属性+1，八卦精华石对应道术，聚魔精华石对应魔法。</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td> 目前只有极品属性有额外的攻道法三种属性的极品装备可以被分解，极品属性每多一点可以多分解出相应属性的一枚精华石。</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td> 每次强化装备需要其装备阶级相对应的精华石1个，最多能升到+5属性（即卓越品质），+6~+8的极品装备需要自己通过打怪物爆出。</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td> 每20个相同精华石可以向上合并成一个高等级的精华石。</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td> 2.06_03版本开放的乾坤石适用于极品装备，会将所加的极品点数随机再分配一次。</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td> 分解、强化和用乾坤石洗装备都需要支出手续费，操作前请注意包裹里的银两是否充足。</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td> 友情提示：撸极品强装备也要多注意休息，多备份存档是好习惯。</td>
+        </tr>
+    </table>
+    <h3>
+        装备分解、精华石强化使用方法
+    </h3>
+    <table class="table table-hover">
+        <tr>
+            <th class="col-md-6">说明</th>
+            <th>图例</th>
+        </tr>
+        <tr>
+            <td>
+                在游戏按M键打开锻造合成界面，首先显示的是分解界面，
+
+                按下切换箭头即显示锻造合成界面
+
+                装备分解：分解极品装备之用
+
+                PS：只有2-7级装备，并且加攻击、魔法、道术的装备才能分解
+
+                锻造与合成：乾坤石重置装备属性和精华石强化装备之用
+
+                PS：乾坤石只能重置极品星级装备，白色装备无法重置，
+
+                精华石强化最多只能强化到+5，比如装备+4了，那只能在强化一次。只能强化2-6级装备。0级装备只能通过混元石合成
+
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/split-and-stone-yellow-enhance-desc/image002.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                将所需要分解的极品装备放入最下面的格子中，在上方格子中会自动显示可即将被分解出的精华石种类和数量，装备下方会提示会消耗的金币数量。
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/split-and-stone-yellow-enhance-desc/image003.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                转换到锻造合成界面，同样将所需要强化的装备放入最下方的格子中，在上方任意格子中放入相应等级的精华石（注意精华石的种类，以免加错属性），每次合成需消耗一个数量的精华石，在装备下方同样会显示消耗金币的数量，按下按钮即可强化装备的属性。
+
+                （图中所示其实是第三次强化，所以需要的金币数量稍多）
+
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/split-and-stone-yellow-enhance-desc/image004.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                如果有20个相同属性阶级的精华石，可以在锻造合成界面合并成1个比前者高1阶段的精华石，方法为将1组精华石放入上方格子中点击按钮合成，图略。
+            </td>
+        </tr>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+</body>
+</html>

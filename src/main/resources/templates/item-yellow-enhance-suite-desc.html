@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h2>装备激活增强攻击说明</h2>
+    <h4>
+        <strong>2.10.17版本加入新玩法:有5件或者以上相同品质的装备，可以激活增强攻击属性</strong>
+    </h4>
+    <table class="table table-hover">
+        <tr>
+            <th class="col-md-6">说明</th>
+            <th>图例</th>
+        </tr>
+        <tr>
+            <td>
+                装备任意5件星级1至星级8的装备（5件或以上相同品质装备），可以激活增强攻击属性
+
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image003.gif}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>装备等级不需要相同，随意5件即可，
+            </td>
+        </tr>
+        <tr>
+            <td>
+                套装属性表（1-4待研究）
+                <br/>
+                5级卓越套：1.15倍
+                <br/>
+                6级登封套：1.20倍
+                <br/>
+                7级传说套：1.30倍
+                <br/>
+                8级史诗套：1.40倍
+                <br/>
+                大家多多收集吧。。。加油。。。
+
+            </td>
+        </tr>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+</body>
+</html>

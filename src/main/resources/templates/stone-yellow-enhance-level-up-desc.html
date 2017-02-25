@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h3>混元石用法</h3>
+    <table class="table table-hover">
+        <tr>
+            <th class="col-md-6">说明</th>
+            <th>图例</th>
+        </tr>
+        <tr>
+            <td>
+                2.09.39新加入玩法，
+                <br/>
+                3件和以上的同样装备，配合混元石，在潘多拉魔盒内可以在一定几率下提升装备极品点数。
+                <br/>
+                以前的装备也可以加入潘多拉合成的，和鉴定装备有区别。
+                <br/>
+            </td>
+            <td rowspan="3">
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image007.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image008.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                如何鉴定：
+                <br/>
+                任何地图内都可以，只要有潘多拉魔盒、混元石、3件和以上的同样的装备，除非你丢了
+                <br/>
+                属性可以会提升，也可能不变。
+                <br/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                霸者勋章，勇者勋章可以合成，2.10.13版本勋章已可用乾坤石洗，也可用这混元石变相的转移属性。
+            </td>
+        </tr>
+        <tr>
+            <td>
+                混元石掉落
+            </td>
+            <td>
+                伏魔令宝箱、藏宝图宝箱、阎魔御卫、阎魔太子、火龙教主、破天魔龙等。。。
+            </td>
+        </tr>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+</body>
+</html>

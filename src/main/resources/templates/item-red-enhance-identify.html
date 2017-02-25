@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h3>红字装备鉴定</h3>
+    <table class="table table-hover">
+        <tr>
+            <th class="col-md-6">说明</th>
+            <th>图例</th>
+        </tr>
+        <tr>
+            <td>
+                2.09.39新加入玩法，更新版本后，
+                <br/>
+                只有在2.09.39版本打到的装备（带有*）才可以鉴定
+                <br/>
+                2.10.11版本更新鉴定装备为红色显示
+
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image002.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image003.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                如何鉴定：
+                <br/>
+                从封魔城主进入庄园，跟老兵对话，选择鉴定装备
+            </td>
+            <td rowspan="2">
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image004.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image005.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image018.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                放入装备，身上必须有鉴定卷轴
+                <br/>
+                17版本已经取消购买鉴定卷轴
+                <br/>
+                18版本增加新手村铁匠可以鉴定3阶以下装备
+                <br/>
+                宝箱掉落鉴定卷轴的几率大大的增加
+                <br/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                举例：
+                <br/>
+                鉴定属性目前无法通过乾坤石洗，
+                <br/>
+                目前已知属性有：魔法伤害、道术伤害、物理伤害、魔法躲避、物理躲避、魔法掉落、幸运
+                <br/>
+                鉴定属性目前已知最多3个鉴定属性。
+                <br/>
+                2.10.13版本更改此鉴定属性
+                <br/>
+                PS：属性是固定的，比如你单机打到一个装备可以鉴定，不管你保存读档多少次，属性还是那个。
+                <br/>
+                要鉴定成想要的属性，大家需要努力
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image006.jpg}"/>
+            </td>
+        </tr>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+</body>
+</html>

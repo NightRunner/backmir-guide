@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h3>混沌石用法</h3>
+    <table class="table table-hover">
+        <tr>
+            <th class="col-md-6">说明</th>
+            <th>图例</th>
+        </tr>
+        <tr>
+            <td>
+                2.10.13新加入玩法，
+                <br/>
+                在潘多拉魔盒内可以以一定几率转移相同装备的鉴定属性
+                <br/>
+                PS：天龙魔戒=天龙魔戒*，天龙魔戒≠ 天龙道戒*
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image009.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image010.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image011.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                失败
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image012.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image013.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image014.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>成功
+                <br/>
+                成功后需要在鉴定一次
+                <br/>
+                至于2孔3孔是否需要多个混沌石，还是一个混沌石可以转移三个孔属性，大家自己实际测试吧。
+                <br/>
+                嘿嘿额~~~~~
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image016.jpg}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image017.jpg}"/>
+                <br/>
+                <img class="img-thumbnail" th:src="@{/static/img/item-enhance/image015.jpg}"/>
+            </td>
+        </tr>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h3>钢铁腰带和避魂鞋强化说明</h3>
+    <strong>55级之前必备装备。
+    </strong>
+    <table class="table table-hover">
+        <tr>
+            <th class="col-md-6">说明</th>
+            <th>图例</th>
+        </tr>
+        <tr>
+            <td>
+                铁腰带和避魂鞋是2级装备，所有采用2级精华强化（只要精华等级等于或者大于装备都可以强化的
+            </td>
+            <td rowspan="2">
+                <img class="img-thumbnail" th:src="@{/static/img/gtyd-and-bhx-yellow-enhance-desc/image002.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>材料准备：右图所示
+            </td>
+        </tr>
+        <tr>
+            <td>分解：右图所示
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/gtyd-and-bhx-yellow-enhance-desc/image003.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td> 强化：右图所示
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/gtyd-and-bhx-yellow-enhance-desc/image004.jpg}"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">以上只是例子：大家对应自己的职业选择精华石。
+
+                新手收集垃圾装备分解1级精华合成也不错哦。
+            </td>
+        </tr>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+</body>
+</html>

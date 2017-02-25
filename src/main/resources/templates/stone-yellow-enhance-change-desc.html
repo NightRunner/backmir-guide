@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h3>乾坤石使用说明
+    </h3>
+    <table class="table table-hover">
+        <tr>
+            <th class="col-md-5">说明</th>
+            <th>图例</th>
+        </tr>
+        <tr>
+            <td>
+                在游戏按M键打开锻造合成界面，首先显示的是装备分解界面，
+
+                按下切换箭头即显示锻造合成界面
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/stone-yellow-enhance-change-desc/image002.png}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/stone-yellow-enhance-change-desc/image004.png}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>把乾坤石放入5个红圈任意一个内，点锻造合成。之后你的装备属性会变化，有时也会没变化，洗出自己想要的属性吧。
+                <br/>
+                <strong>PS：被重置的装备必须是极品有星级的装备，如图所示的装备</strong>
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/stone-yellow-enhance-change-desc/image006.png}"/>
+
+            </td>
+        </tr>
+        <tr>
+            <td>重置前后的装备对比
+                <br/>
+                洗出自己想要的属性吧。。。。
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/stone-yellow-enhance-change-desc/image008.png}"/>
+                <img class="img-thumbnail" th:src="@{/static/img/stone-yellow-enhance-change-desc/image010.png}"/>
+            </td>
+        </tr>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+</body>
+</html>
