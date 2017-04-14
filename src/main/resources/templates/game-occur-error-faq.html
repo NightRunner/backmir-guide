@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h3>游戏出错解答
+    </h3>
+    <table class="table table-hover">
+        <tr>
+            <th>问题</th>
+            <th class="">图例</th>
+            <th>解决</th>
+        </tr>
+        <tr>
+            <td>应用程序无法启动，
+                应用程序的配置不正确
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/game-occur-error-faq/image002.jpg}"/>
+            </td>
+            <td>
+                请安装游戏目录附带“必须安装”的VC2008
+            </td>
+        </tr>
+        <tr>
+            <td>服务器启动提示失败，
+                服务器启动提示不存在
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/game-occur-error-faq/image003.jpg}"/>
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/game-occur-error-faq/image004.jpg}"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>进入游戏花屏
+            </td>
+            <td>
+            </td>
+            <td>
+                请修改系统色彩为真彩32位（如不知道如何调整请百度即可）
+            </td>
+        </tr>
+
+        <tr>
+            <td>出现Create IO 错误
+
+            </td>
+            <td>
+            </td>
+            <td>
+                请尝试修改游戏端口，如不行，暂时无法解决。
+            </td>
+        </tr>
+
+        <tr>
+            <td>WIN764位出现ERROR错误怎么办？
+
+
+            </td>
+            <td>
+            </td>
+            <td>
+                请尝试用虚拟机进行游戏，如不行，暂时无法解决。
+            </td>
+        </tr>
+
+        <tr>
+            <td>出现如下图所示错误怎么办？
+                ？
+
+
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/game-occur-error-faq/image005.jpg}"/>
+
+            </td>
+            <td>
+                查看游戏目录下是否有Save文件夹，如无，请创建一个即可解决。
+            </td>
+        </tr>
+
+        <tr>
+            <td> 服务器已经开启，点击开始游戏却没有反应。
+            </td>
+            <td>
+            </td>
+            <td>
+                请重新尝试开启，可能有服务器刚开即掉线问题。
+            </td>
+        </tr>
+        <tr>
+            <td> 物品怎么交易给别人或者自己的小号呢
+            </td>
+            <td>
+
+            </td>
+            <td>
+                把需要交易的物品丢在地上，存档，再捡取跑到需要交易的地方或者直接退出上小号交易即可。
+
+                非联机交易方法请参考{梦回传奇>重要信息}。<!-- <todo>传送门</todo> -->
+            </td>
+        </tr>
+
+        <tr>
+            <td> 物品丢在地上会消失不见吗？
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+                地面物品存在3分钟消失，请勿把物品丢在地上过长时间。
+
+            </td>
+        </tr>
+
+        <tr>
+            <td> 下载的游戏完整压缩包需要密码，是什么？
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+                一般群管理和吧主上传的完整版不需要解压密码！
+
+                圣战发布的游戏补丁解压密码为：123321
+            </td>
+        </tr>
+
+        <tr>
+            <td>游戏有哪些功能还没开放？
+
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+                当前版本没有添加BOSS键、整理背包键、第二页背包、铁匠升级武器功能。游戏无自动寻路，暂停功能。
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>如何查看人物属性?
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+                打开人物栏，下面的向右按钮点击即可翻页查看人物属性。
+            </td>
+        </tr>
+
+        <tr>
+            <td>如何打开大地图，大地图和小地图上的红点和黄点代表什么？
+            </td>
+            <td>
+
+            </td>
+            <td>
+                按TAB可打开大地图，红点代表小怪，黄点代表大小BOSS，灰点代表自己，绿点是NPC，玫红点是参与联机的其他玩家。
+            </td>
+        </tr>
+
+        <tr>
+            <td> 关于物品的捡取、显示、和出售。
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+                捡取物品可以按空格或鼠标左键。鼠标左键拾取在设置里面勾选，出售物品方法为拉取物品到商店界面即可。
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>装备有极品属性吗？能加到多少？与普通物品颜色有区别吗？
+
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+                装备极品属性最多加8，掉落在地上普通装备显示蓝色，极品装备显示金色。捡取之后物品上会显示普通，良品，精致，无暇，完美，卓越，登峰，传说，史诗等字样来显示普通到加8极品的区别。通过强化最多可以把得到的装备提升到卓越级别，即+5。
+            </td>
+        </tr>
+
+        <tr>
+            <td> 如何截图{一般用于贴吧发帖或者群里交流}
+
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+                可以使用QQ快捷截图ctrl+alt+A，或者使用游戏自带截图功能ctrl+s即可，截图保存在游戏目录下的Snapshot文件夹内。
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                点击启动之后没有自动弹出客户端。
+            </td>
+            <td>
+
+            </td>
+            <td>
+                出现此问题是由于杀毒软件没有添加信任，请重新解压并且添加信任即可
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                不能进入游戏出现
+
+                E6错误。
+            </td>
+            <td>
+                <img class="img-thumbnail" th:src="@{/static/img/game-occur-error-faq/image007.jpg}"/>
+
+            </td>
+
+            <td>
+                一般此问题出现在i7或者e3平台多核心多线程的CPU上。
+                <br/>
+                <img class="img-thumbnail" th:src="@{/static/img/game-occur-error-faq/image008.jpg}"/>
+                <br/>
+                XP或其他系统请百度查找关闭多线程或者屏蔽多余核心的方法。
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                如何组队
+
+                及察看玩家装备
+            </td>
+            <td>
+            </td>
+
+            <td>
+                参见条目《新人指南>联机组队和察看装备教程》。
+
+                <!-- todo 传送门 -->
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                精英和首领怪物
+                与普通怪物的区别
+            </td>
+            <td>
+            </td>
+            <td>
+                精英怪物的攻击和血量是普通的1.5倍，首领怪物为2倍，
+
+                如何关闭和打开精英模式，参考《新人指南>有趣的说明》
+
+                <!-- todo 传送门 -->
+            </td>
+        </tr>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+</body>
+</html>
