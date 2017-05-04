@@ -9,48 +9,48 @@ $(document).ready(function () {
     buffer+= monster.name;
     buffer+="</td>";
 
-    buffer+="<td>";
+    buffer+="<td title='等级'>";
     buffer+= monster.level;
     buffer+="</td>";
 
 
-    buffer+="<td>";
+    buffer+="<td title='血量'>";
     buffer+= monster.hp;
     buffer+="</td>";
 
-    buffer+="<td>";
+    buffer+="<td title='物防'>";
     buffer+= monster.physicalDefense;
     buffer+="</td>";
 
-    buffer+="<td>";
+    buffer+="<td title='魔防'>";
     buffer+= monster.magicDefense;
     buffer+="</td>";
 
-    buffer+="<td>";
+    buffer+="<td title='经验'>";
     buffer+= monster.exp;
     buffer+="</td>";
 
-    buffer+="<td>";
+    buffer+="<td title='准确'>";
     buffer+= monster.accuracy;
     buffer+="</td>";
 
-    buffer+="<td>";
+    buffer+="<td title='攻击距离'>";
     buffer+= monster.attackDistance;
     buffer+="</td>";
 
-    buffer+="<td>";
+    buffer+="<td title='视野'>";
     buffer+= monster.vision;
     buffer+="</td>";
 
-    buffer+="<td>";
+    buffer+="<td title='攻击间隔'>";
     buffer+= monster.attackInterval/1000;
     buffer+="</td>";
 
-    buffer+="<td>";
+    buffer+="<td title='攻击力'>";
     buffer+= monster.attack;
     buffer+="</td>";
 
-    buffer+="<td>";
+    buffer+="<td title='移动间隔'>";
     buffer+= monster.moveInterval/1000;
     buffer+="</td>";
 
