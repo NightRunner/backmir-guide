@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+<div th:replace="fragments/common :: nav">nav</div>
+<div class="container">
+    <h3>怪物数据</h3>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>名称</th>
+            <th class="col-md-x">等级</th>
+            <th class="col-md-x">血量</th>
+            <th class="col-md-x">物防</th>
+            <th class="col-md-x">魔防</th>
+            <th class="col-md-x">经验</th>
+            <th class="col-md-x">准确</th>
+            <th class="col-md-x">攻击距离</th>
+            <th class="col-md-x">视野</th>
+            <th class="col-md-x">攻击间隔(秒)</th>
+            <th class="col-md-x">攻击</th>
+            <th class="col-md-x">移动间隔(秒)</th>
+        </tr>
+        </thead>
+        <tbody id="monster-tbody">
+        </tbody>
+    </table>
+</div>
+<div th:replace="fragments/footer :: baidu-script">百度统计script</div>
+<script th:src="@{/static/js/monster.js(v=${#dates.format(serverStartDate, 'yyyyMMdd')})}"></script>
+</body>
+</html>

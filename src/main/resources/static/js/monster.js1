@@ -1,0 +1,14 @@
+var monsters =
+    [
+        {
+            id: 'ji', name: '鸡', hp: 5, drops: [{id: 'ji-rou', rate: 30/*爆率 %*/}],
+            minAC: 1, /*最小物理攻击*/
+            maxAC: 1, /*最大物理攻击*/
+            minDA: 1, /*最小物理防御*/
+            maxDA: 2, /*最大物理防御*/
+            range: 2, /* 警戒范围 */
+            skill: [
+                {id: 'xx', hp: 200} /* 血量低于 hp 后触发技能 */
+            ]
+        }
+    ];

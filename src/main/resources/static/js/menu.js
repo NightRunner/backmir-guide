@@ -68,6 +68,12 @@ var menu = [
             {name: '钢铁腰带和避魂靴强化说明', url: 'gtyd-and-bhx-yellow-enhance-desc'},
             {name: '乾坤石用法', url: 'stone-yellow-enhance-change-desc'}
         ]
+    },
+    {
+        name: '怪物',
+        children: [
+            {name: '怪物数据', url: 'monster'},
+        ]
     }
 ];
 

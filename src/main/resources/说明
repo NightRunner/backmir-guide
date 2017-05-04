@@ -1,0 +1,38 @@
+名称 name	=	幻之牛魔祭祀   
+攻击速度 atkSpeed	=	10
+攻击速度 moveSpeed	=	4
+生命 maxHP,HP	=	3500
+防御 DC	=	40
+最大防御 maxDC	=	90
+攻击距离 maxSC	=	1
+视野 SC	=	7
+攻击间隔(毫秒) maxMC	=	400
+行走间隔(毫秒) MC	=	100
+物理防御 AC	=	20
+魔法防御 MAC	=	150
+等级 level	=	60
+经验? expr	=	5500
+隐藏属性 hide	=	5
+? weight	=	11
+? curse	=	1
+准确 accuracy=	20
+
+
+maxSC=攻击距离
+SC=视野//
+maxMC=攻击间隔//
+MC=行走间隔//
+
+dc是攻击//
+
+ac是物防//
+mac是魔防//
+
+
+总结:
+HP：生命值//
+level: 等级//
+expr:经验值//
+accuracy:准确//
+
+
